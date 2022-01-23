@@ -3,13 +3,13 @@ import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 
 const Button = ({ buttonType = 'Submit', param = '' }) => {
-  const API_URL = process.env.REACT_APP_API_URL;
+  const URL = process.env.REACT_APP_BACKEND || process.env.REACT_APP_API_URL;
   const navigate = useNavigate();
   const backURL = '/transactions';
   const editBackURL = '/transactions/' + param;
   const editURL = `/transactions/${param}/edit`;
   const deleteFunc = async () => {
-    const errorCheck = await axios.delete(`${API_URL}/transactions/${param}`);
+    const errorCheck = await axios.delete(`${URL}/transactions/${param}`);
     errorCheck ? navigate('/transactions') : navigate('/unknown');
   };
   const linkButton = (

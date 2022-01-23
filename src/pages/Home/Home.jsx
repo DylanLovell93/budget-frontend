@@ -6,8 +6,7 @@ import axios from 'axios';
 
 const Home = () => {
   const [budget, setBudget] = useState([]);
-  const BASE_URL = 'https://sleepy-escarpment-09554.herokuapp.com';
-  const URL = process.env.REACT_APP_API_URL;
+  const URL = process.env.REACT_APP_BACKEND || process.env.REACT_APP_API_URL;
 
   useEffect(async () => {
     const getBudget = async () => {

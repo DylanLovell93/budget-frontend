@@ -20,7 +20,7 @@ const Edit = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { allBudgets, singleBudget } = state;
-  const URL = process.env.REACT_APP_API_URL;
+  const URL = process.env.REACT_APP_BACKEND || process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const getBudget = async () => {

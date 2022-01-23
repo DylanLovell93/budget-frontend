@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const Index = () => {
   const [budget, setBudget] = useState([]);
-  const URL = process.env.REACT_APP_API_URL;
+  const URL = process.env.REACT_APP_BACKEND || process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const getBudget = async () => {

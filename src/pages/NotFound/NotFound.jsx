@@ -5,7 +5,7 @@ import Nav from '../../components/Nav/Nav';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 
 const NotFound = () => {
-  const URL = process.env.REACT_APP_API_URL;
+  const URL = process.env.REACT_APP_BACKEND || process.env.REACT_APP_API_URL;
   const [budget, setBudget] = useState([]);
 
   useEffect(() => {

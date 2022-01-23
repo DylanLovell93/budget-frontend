@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 import axios from 'axios';
 
 const BudgetForm = () => {
-  const URL = process.env.REACT_APP_API_URL;
+  const URL = process.env.REACT_APP_BACKEND || process.env.REACT_APP_API_URL;
   const navigate = useNavigate();
   const { id: param } = useParams();
   const buttonsNeeded = [param ? 'EditBack' : 'Back', 'Submit'];
