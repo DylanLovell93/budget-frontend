@@ -1,0 +1,27 @@
+.BudgetInfo {
+  height: 80vh;
+  display: flexbox;
+  align-content: center;
+  box-sizing: content-box;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.BudgetInfo .container {
+  color: white;
+  margin: 0px auto 20px;
+  width: 75%;
+  height: 40vh;
+  text-align: center;
+  border: 2px solid teal;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.BudgetInfo .Buttons {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}

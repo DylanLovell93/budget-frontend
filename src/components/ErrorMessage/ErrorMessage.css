@@ -1,0 +1,29 @@
+.ErrorMessage {
+  margin-top: 20px;
+}
+
+.ErrorMessage .container {
+  color: white;
+  margin: 0px auto 20px;
+  width: 75%;
+  height: auto;
+  text-align: center;
+  border: 2px solid teal;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.ErrorMessage .container h1 {
+  margin-bottom: 0px;
+}
+
+.ErrorMessage .container h6 {
+  margin: 0px;
+}
+
+.ErrorMessage .buttons {
+  display: flex;
+  justify-content: center;
+}

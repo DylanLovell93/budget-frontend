@@ -1,0 +1,56 @@
+.BudgetForm {
+  max-height: 80vh;
+  display: flexbox;
+  padding: 0px 30px;
+  box-sizing: content-box;
+}
+
+.BudgetForm .container {
+  color: white;
+  margin: 0px auto 20px;
+  width: 75%;
+  height: auto;
+  text-align: center;
+  border: 2px solid teal;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.BudgetForm form {
+  width: 75%;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.BudgetForm h1 {
+  color: white;
+}
+.BudgetForm h2 {
+  margin: 0px;
+  width: auto;
+  padding: 0px 5px;
+  display: flex;
+}
+
+.BudgetForm label {
+  color: white;
+  font-weight: bold;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.BudgetForm input {
+  margin: 5px 0px;
+  width: 95%;
+  font-size: 20px;
+}
+
+.BudgetForm .Buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}

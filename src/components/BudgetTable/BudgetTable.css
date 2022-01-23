@@ -1,0 +1,27 @@
+.BudgetTable {
+  height: 88vh;
+  padding-top: 20px;
+  box-sizing: content-box;
+}
+
+.BudgetTable h1 {
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+
+.BudgetTable table {
+  width: 80%;
+  margin: auto;
+}
+
+.BudgetTable .minus {
+  color: red;
+}
+.BudgetTable .plus {
+  color: green;
+}
+
+.BudgetTable .even {
+  color: white;
+}

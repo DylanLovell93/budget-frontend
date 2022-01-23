@@ -1,0 +1,20 @@
+.TableRow {
+  color: white;
+}
+
+.TableRow td {
+  border-bottom: 1px gray solid;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.TableRow td a,
+.TableRow td a:visited,
+.TableRow td a:active {
+  color: teal;
+}
+
+.TableRow td a:hover {
+  color: rgb(0, 172, 172);
+}

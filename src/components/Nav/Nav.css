@@ -1,0 +1,73 @@
+.Nav {
+  height: 12vh;
+  width: 100%;
+  background-color: rgb(35, 83, 81);
+  border-bottom: 3px solid teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Nav .title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.Nav a,
+.Nav a:hover,
+.Nav a:active,
+.Nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.Nav .right button {
+  box-shadow: none;
+  background-color: rgba(240, 255, 255, 0);
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.Nav .right button:hover {
+  cursor: pointer;
+}
+
+.Nav .right a {
+  width: 100px;
+  margin-left: 100px;
+  margin-right: 0px;
+  box-sizing: border-box;
+  padding-left: auto;
+  padding-right: 0px;
+}
+
+.Nav .total {
+  color: white;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.Nav span {
+  font-weight: bold;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: black;
+}
+.Nav .minus {
+  color: red;
+}
+.Nav .plus {
+  color: green;
+}
+
+.Nav .even {
+  color: white;
+}

@@ -1,0 +1,16 @@
+.WelcomeMessage {
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.WelcomeMessage .window {
+  min-height: 50vh;
+  width: 85%;
+  margin: 25px auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
