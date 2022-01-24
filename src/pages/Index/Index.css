@@ -2,4 +2,5 @@
   height: 88vh;
   box-sizing: border-box;
   overflow: scroll;
+  overflow-x: hidden;
 }

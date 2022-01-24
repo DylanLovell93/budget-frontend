@@ -2,7 +2,9 @@
   max-height: 80vh;
   display: flexbox;
   padding: 0px 30px;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0px auto;
 }
 
 .BudgetForm .container {
@@ -16,6 +18,7 @@
   box-sizing: border-box;
   padding: 20px;
   max-width: 400px;
+  min-width: 300px;
 }
 
 .BudgetForm form {
@@ -26,6 +29,13 @@
 
 .BudgetForm h1 {
   color: white;
+  width: 75%;
+  max-width: 400px;
+  min-width: 300px;
+  display: flex;
+  justify-items: center;
+  margin: 20px auto;
+  text-align: left;
 }
 .BudgetForm h2 {
   margin: 0px;
@@ -53,4 +63,5 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+  max-width: 400px;
 }

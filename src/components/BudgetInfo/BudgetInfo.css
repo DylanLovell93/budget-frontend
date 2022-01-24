@@ -4,18 +4,19 @@
   align-content: center;
   box-sizing: content-box;
   padding: 20px;
-  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .BudgetInfo .container {
   color: white;
   margin: 0px auto 20px;
   width: 75%;
-  height: 40vh;
+  height: auto;
   text-align: center;
   border: 2px solid teal;
   border-radius: 20px;
   box-sizing: border-box;
+  max-width: 600px;
 }
 
 .BudgetInfo .Buttons {
@@ -24,4 +25,13 @@
   display: flex;
   align-content: center;
   justify-content: space-between;
+  max-width: 600px;
+}
+
+.BudgetInfo h1 {
+  margin: 10px 0px;
+}
+
+.BudgetInfo h2 {
+  margin: 20px 0px;
 }

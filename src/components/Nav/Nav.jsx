@@ -13,7 +13,13 @@ const Nav = ({ budget = [] }) => {
       </div>
       <div className="right">
         <div className="total">
-          Current balance: <span className={color}>{total}</span>
+          Current balance:{' '}
+          <span className={color}>
+            {total.toLocaleString('en-US', {
+              style: 'currency',
+              currency: 'USD',
+            })}
+          </span>
         </div>
         <Link to="/transactions/new">
           <button>New Item</button>

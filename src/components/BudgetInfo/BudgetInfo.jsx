@@ -1,5 +1,6 @@
 import './BudgetInfo.css';
 import Button from '../Button/Button';
+import { formatDate } from '../../helper/helperFuncs';
 
 const BudgetInfo = ({
   singleBudget: { date, source, amount, from, category, id },
@@ -14,8 +15,14 @@ const BudgetInfo = ({
     <div className="BudgetInfo">
       <div className="container">
         <h1>{source}</h1>
-        <h2>Date: {date}</h2>
-        <h2>Amount: {amount}</h2>
+        <h2>Date: {formatDate(date)}</h2>
+        <h2>
+          Amount:{' '}
+          {amount.toLocaleString('en-US', {
+            style: 'currency',
+            currency: 'USD',
+          })}
+        </h2>
         <h2>From: {from}</h2>
         <h2>Category: {category}</h2>
       </div>

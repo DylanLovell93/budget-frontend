@@ -8,11 +8,17 @@
   color: white;
   text-align: center;
   margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+.BudgetTable h1 span {
+  margin: 0px 10px;
 }
 
 .BudgetTable table {
   width: 80%;
   margin: auto;
+  max-width: 800px;
 }
 
 .BudgetTable .minus {

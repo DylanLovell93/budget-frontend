@@ -40,7 +40,11 @@ const BudgetForm = () => {
 
   const handleChange = (event) => {
     const { value, id } = event.target;
-    setBudget({ ...budget, [id]: value });
+    setBudget({
+      ...budget,
+      [id]: id === 'amount' ? Number(value) : value,
+    });
+    console.log(budget);
   };
 
   const allButtons = buttonsNeeded.map((e, i) => (
@@ -57,7 +61,7 @@ const BudgetForm = () => {
             <h2>Date</h2>
             <input
               id="date"
-              type="text"
+              type="date"
               value={budget.date}
               placeholder="Date"
               onChange={handleChange}
@@ -78,7 +82,7 @@ const BudgetForm = () => {
             <input
               id="amount"
               type="number"
-              value={budget.amount}
+              value={Number(budget.amount)}
               placeholder=""
               onChange={handleChange}
             />

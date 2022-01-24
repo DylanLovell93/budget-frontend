@@ -18,3 +18,7 @@
 .TableRow td a:hover {
   color: rgb(0, 172, 172);
 }
+
+.TableRow .source {
+  text-align: left;
+}
