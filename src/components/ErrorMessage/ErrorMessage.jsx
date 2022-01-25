@@ -6,7 +6,7 @@ const ErrorMessage = () => {
     <div className="ErrorMessage">
       <div className="container">
         <h1>Error: 808 &#128148;</h1>
-        <h6>(It's actually 404, just sadder)</h6>
+        <h4>(It's actually 404, just sadder)</h4>
         <h3>Page not found</h3>
       </div>
       <div className="buttons">
