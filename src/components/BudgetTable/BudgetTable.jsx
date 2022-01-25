@@ -19,9 +19,16 @@ const BudgetTable = ({ budget }) => {
   const filteredBudget = filterBudget(budget, select.filterSelect);
   const sortedAndFilteredBudget = sortBudget(filteredBudget, select.sortSelect);
 
-  const tableRows = sortedAndFilteredBudget.map((e, i) => (
-    <TableRow budgetItem={e} key={i} idx={i} />
-  ));
+  const noItems = (
+    <tr className="TableRow">
+      <td>No Items found &#128148;</td>
+    </tr>
+  );
+  const tableRows = sortedAndFilteredBudget.length
+    ? sortedAndFilteredBudget.map((e, i) => (
+        <TableRow budgetItem={e} key={i} idx={i} />
+      ))
+    : noItems;
 
   return (
     <div className="BudgetTable">

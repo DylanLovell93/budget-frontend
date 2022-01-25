@@ -12,7 +12,6 @@ const Index = () => {
     const getBudget = async () => {
       const newBudget = await axios.get(URL + '/transactions');
       setBudget(newBudget.data);
-      console.log(newBudget.data);
     };
     getBudget();
   }, []);
