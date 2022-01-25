@@ -31,3 +31,17 @@
 .BudgetTable .even {
   color: white;
 }
+
+.BudgetTable .budgetSelect {
+  color: white;
+  width: 65%;
+  margin: 10px auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-weight: bold;
+}
+.BudgetTable .budgetSelect select {
+  margin: 0px 10px;
+}

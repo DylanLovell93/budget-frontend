@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const TableRow = ({
   idx,
-  budgetItem: { date, source, amount, from, category, id },
+  budgetItem: { date, name, amount, from, category, id },
 }) => {
   return (
     <tr className="TableRow">
       <td>{formatDate(date)}</td>
       <td className="source">
-        <Link to={`/transactions/${id}`}>{source}</Link>
+        <Link to={`/transactions/${id}`}>{name}</Link>
       </td>
       <td>
         {amount.toLocaleString('en-US', {

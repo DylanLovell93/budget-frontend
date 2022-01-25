@@ -11,7 +11,7 @@ const BudgetForm = () => {
   const buttonsNeeded = [param ? 'EditBack' : 'Back', 'Submit'];
   const [budget, setBudget] = useState({
     date: '',
-    source: '',
+    name: '',
     amount: 0,
     from: '',
     category: '',
@@ -44,7 +44,6 @@ const BudgetForm = () => {
       ...budget,
       [id]: id === 'amount' ? Number(value) : value,
     });
-    console.log(budget);
   };
 
   const allButtons = buttonsNeeded.map((e, i) => (
@@ -57,25 +56,27 @@ const BudgetForm = () => {
       <h1>{param ? 'Edit Item' : 'New Item'}</h1>
       <form onSubmit={param ? handleEdit : handleNew}>
         <div className="container">
-          <label htmlFor="date">
-            <h2>Date</h2>
+          <label htmlFor="name">
+            <h2>Name</h2>
             <input
-              id="date"
-              type="date"
-              value={budget.date}
-              placeholder="Date"
-              onChange={handleChange}
-            />
-          </label>
-          <label htmlFor="source">
-            <h2>Source</h2>
-            <input
-              id="source"
+              id="name"
               type="text"
-              value={budget.source}
-              placeholder="Source"
+              value={budget.name}
+              placeholder="Name"
               onChange={handleChange}
+              required
             />
+            <label htmlFor="date">
+              <h2>Date</h2>
+              <input
+                id="date"
+                type="date"
+                value={budget.date}
+                placeholder="Date"
+                onChange={handleChange}
+                required
+              />
+            </label>
           </label>
           <label htmlFor="amount">
             <h2>Amount</h2>
@@ -85,6 +86,7 @@ const BudgetForm = () => {
               value={Number(budget.amount)}
               placeholder=""
               onChange={handleChange}
+              required
             />
           </label>
           <label htmlFor="from">
@@ -95,17 +97,33 @@ const BudgetForm = () => {
               value={budget.from}
               placeholder="From"
               onChange={handleChange}
+              required
             />
           </label>
           <label htmlFor="category">
             <h2>Category</h2>
-            <input
+            <select
               id="category"
-              type="text"
               value={budget.category}
-              placeholder="Category"
               onChange={handleChange}
-            />
+              required
+            >
+              <option value="house">Housing</option>
+              <option value="trans">Transportation</option>
+              <option value="food">Food</option>
+              <option value="util">Utilities</option>
+              <option value="clothing">Clothing</option>
+              <option value="med">Medical/Healthcare</option>
+              <option value="insurance">Insurance</option>
+              <option value="suply">Households/Supplies </option>
+              <option value="personal">Personal</option>
+              <option value="debt">Debt</option>
+              <option value="retire">Retirement</option>
+              <option value="edu">Education</option>
+              <option value="save">Savings</option>
+              <option value="ent">Entertainment</option>
+              <option value="gift">Gifts/Donations</option>
+            </select>
           </label>
         </div>
         <div className="Buttons">{allButtons}</div>

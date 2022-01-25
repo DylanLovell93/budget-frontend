@@ -58,6 +58,15 @@
   font-size: 20px;
 }
 
+.BudgetForm select {
+  margin: 5px 0px;
+  width: 95%;
+  font-size: 20px;
+  border-width: 2px;
+  padding: 1px 2px;
+  box-sizing: content-box;
+}
+
 .BudgetForm .Buttons {
   width: 50%;
   display: flex;

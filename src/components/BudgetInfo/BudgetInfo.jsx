@@ -1,9 +1,9 @@
 import './BudgetInfo.css';
 import Button from '../Button/Button';
-import { formatDate } from '../../helper/helperFuncs';
+import { formatDate, formatCategory } from '../../helper/helperFuncs';
 
 const BudgetInfo = ({
-  singleBudget: { date, source, amount, from, category, id },
+  singleBudget: { date, name, amount, from, category, id },
   param,
 }) => {
   const buttonsList = ['Back', 'Edit', 'Delete'];
@@ -14,7 +14,7 @@ const BudgetInfo = ({
   return (
     <div className="BudgetInfo">
       <div className="container">
-        <h1>{source}</h1>
+        <h1>{name}</h1>
         <h2>Date: {formatDate(date)}</h2>
         <h2>
           Amount:{' '}
@@ -24,7 +24,7 @@ const BudgetInfo = ({
           })}
         </h2>
         <h2>From: {from}</h2>
-        <h2>Category: {category}</h2>
+        <h2>Category: {formatCategory(category)}</h2>
       </div>
       <div className="Buttons">{allButtons}</div>
     </div>
