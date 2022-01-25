@@ -50,9 +50,9 @@ const sortBudget = (budget, method) => {
           new Date(formatInput(b.date)).valueOf()
       );
     case 'aToZ':
-      return [...budget].sort((a, b) => (a.source > b.source ? 1 : -1));
+      return [...budget].sort((a, b) => (a.name > b.name ? 1 : -1));
     case 'zToA':
-      return [...budget].sort((a, b) => (b.source > a.source ? 1 : -1));
+      return [...budget].sort((a, b) => (b.name > a.name ? 1 : -1));
     case 'highToLow':
       return [...budget].sort((a, b) => b.amount - a.amount);
     case 'lowToHigh':
